@@ -1,6 +1,10 @@
 backend:
   name: git-gateway
+  repo: ribeiroevandro/nextjs-netlify-blog-template
   branch: master
+  local_backend: true
+
+
 media_folder: public/images
 public_folder: /images
 publish_mode: editorial_workflow
