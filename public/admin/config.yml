@@ -91,6 +91,24 @@ collections:
                 name: "name"
                 widget: "string"
                 hint: "Tag name for displaying on the site"
+      - name: "status"
+        label: "Status"
+        file: "meta/status.yml"
+        description: "List of status"
+        fields:
+          - name: status
+            label: Status
+            label_singular: "Status"
+            widget: list
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                hint: "The part of a URL identifies the status"
+              - label: "Display Name"
+                name: "name"
+                widget: "string"
+                hint: "Tag name for displaying on the site"
 
   - name: "posts"
     label: "Posts"
