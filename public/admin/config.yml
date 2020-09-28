@@ -140,9 +140,8 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-
   - name: "products"
-    label: "Produtos"
+    label: "Products"
     folder: "src/pages/products"
     extension: "mdx"
     format: "frontmatter"
@@ -157,16 +156,16 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-      - label: Status
-        name: "status"
-        widget: relation
-        collection: "meta"
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DD"
         dateFormat: "YYYY-MM-DD"
         timeFormat: false
+      - label: Status
+        name: "status"
+        widget: relation
+        collection: "meta"
         file: "status"
         searchFields:
           - "status.*.name"
