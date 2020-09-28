@@ -132,6 +132,16 @@ collections:
         format: "YYYY-MM-DD"
         dateFormat: "YYYY-MM-DD"
         timeFormat: false
+      - label: Author
+        name: "author"
+        widget: relation
+        collection: "meta"
+        file: "authors"
+        searchFields:
+          - "authors.*.name"
+        displayFields:
+          - "authors.*.name"
+        valueField: "authors.*.slug"
       - label: Status
         name: "status"
         widget: relation

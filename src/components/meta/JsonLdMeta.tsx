@@ -9,7 +9,6 @@ type Props = {
   title: string;
   keywords?: string[];
   date: Date;
-  author?: string;
   image?: string;
   description?: string;
 };
@@ -18,7 +17,6 @@ export default function JsonLdMeta({
   title,
   keywords,
   date,
-  author,
   image,
   description,
 }: Props) {
@@ -32,7 +30,6 @@ export default function JsonLdMeta({
           headline: title,
           keywords: keywords ? undefined : keywords.join(","),
           datePublished: formatISO(date),
-          author: author,
           image: image,
           description: description,
         })}
