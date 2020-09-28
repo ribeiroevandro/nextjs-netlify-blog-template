@@ -8,7 +8,7 @@ type Props = {
   url: string;
   title: string;
   keywords?: string[];
-  date: Date;
+  date?: Date;
   image?: string;
   description?: string;
 };
@@ -29,7 +29,7 @@ export default function JsonLdMeta({
           mainEntityOfPage: config.base_url + url,
           headline: title,
           keywords: keywords ? undefined : keywords.join(","),
-          datePublished: formatISO(date),
+          // datePublished: formatISO(date),
           image: image,
           description: description,
         })}
