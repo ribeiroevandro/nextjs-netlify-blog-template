@@ -1,8 +1,8 @@
 tags:
   - slug: promotion
-    name: Promoção
+    name: promotion
   - slug: featured
-    name: Destaque
+    name: featured
   - slug: style
     name: style
   - slug: license
