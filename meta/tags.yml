@@ -1,8 +1,8 @@
 tags:
-  - slug: document
-    name: document
-  - slug: mock
-    name: mock
+  - slug: promotion
+    name: Promoção
+  - slug: featured
+    name: Destaque
   - slug: style
     name: style
   - slug: license
